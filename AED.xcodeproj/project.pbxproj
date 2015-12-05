@@ -40,6 +40,30 @@
 		3C4A511C1C134AC000B40516 /* PAPcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511A1C134ABF00B40516 /* PAPcircle.png */; };
 		3C4A511D1C134AC000B40516 /* WPcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511B1C134ABF00B40516 /* WPcircle.png */; };
 		3C4A511F1C134C2600B40516 /* gang_wolfik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511E1C134BE600B40516 /* gang_wolfik.ttf */; };
+		3C4B090E1C136D980060A16B /* LeaderViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B090D1C136D980060A16B /* LeaderViewController.m */; };
+		3C4B09101C136FAC0060A16B /* overlay.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4B090F1C136FAC0060A16B /* overlay.png */; };
+		3C4B09131C1373CB0060A16B /* OverlayView.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B09121C1373CB0060A16B /* OverlayView.m */; };
+		3C4B09161C137A880060A16B /* MarkerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4B09151C137A880060A16B /* MarkerViewController.m */; };
+		3C4B09181C137B050060A16B /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4B09171C137B050060A16B /* MapKit.framework */; };
+		3C7E1A4A1C13578A00F3C9CC /* bluebar.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A491C13578A00F3C9CC /* bluebar.png */; };
+		3C7E1A501C135DC000F3C9CC /* icon-camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A4B1C135DC000F3C9CC /* icon-camera.png */; };
+		3C7E1A511C135DC000F3C9CC /* icon-leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A4C1C135DC000F3C9CC /* icon-leaderboard.png */; };
+		3C7E1A521C135DC000F3C9CC /* icon-settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A4D1C135DC000F3C9CC /* icon-settings.png */; };
+		3C7E1A531C135DC000F3C9CC /* icon-status.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A4E1C135DC000F3C9CC /* icon-status.png */; };
+		3C7E1A541C135DC000F3C9CC /* icon-sword.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A4F1C135DC000F3C9CC /* icon-sword.png */; };
+		3C7E1A591C13613900F3C9CC /* settings.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A551C13613900F3C9CC /* settings.png */; };
+		3C7E1A5A1C13613900F3C9CC /* settingss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A561C13613900F3C9CC /* settingss.png */; };
+		3C7E1A5B1C13613900F3C9CC /* status.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A571C13613900F3C9CC /* status.png */; };
+		3C7E1A5C1C13613900F3C9CC /* statuss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A581C13613900F3C9CC /* statuss.png */; };
+		3C7E1A5F1C13614100F3C9CC /* marker.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A5D1C13614100F3C9CC /* marker.png */; };
+		3C7E1A601C13614100F3C9CC /* markerss.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A5E1C13614100F3C9CC /* markerss.png */; };
+		3C7E1A631C13614600F3C9CC /* leader.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A611C13614600F3C9CC /* leader.png */; };
+		3C7E1A641C13614600F3C9CC /* leaders.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A621C13614600F3C9CC /* leaders.png */; };
+		3C7E1A671C13614F00F3C9CC /* camera.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A651C13614F00F3C9CC /* camera.png */; };
+		3C7E1A681C13614F00F3C9CC /* cameras.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A661C13614F00F3C9CC /* cameras.png */; };
+		3C7E1A6A1C13657000F3C9CC /* leaderboard.jpg in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A691C13657000F3C9CC /* leaderboard.jpg */; };
+		3C7E1A6C1C1365DD00F3C9CC /* trophy.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A6B1C1365DD00F3C9CC /* trophy.png */; };
+		3C7E1A6E1C1369B900F3C9CC /* leaderboard.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C7E1A6D1C1369B900F3C9CC /* leaderboard.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -105,6 +129,33 @@
 		3C4A511A1C134ABF00B40516 /* PAPcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PAPcircle.png; sourceTree = "<group>"; };
 		3C4A511B1C134ABF00B40516 /* WPcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WPcircle.png; sourceTree = "<group>"; };
 		3C4A511E1C134BE600B40516 /* gang_wolfik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gang_wolfik.ttf; sourceTree = "<group>"; };
+		3C4B090C1C136D980060A16B /* LeaderViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LeaderViewController.h; sourceTree = "<group>"; };
+		3C4B090D1C136D980060A16B /* LeaderViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LeaderViewController.m; sourceTree = "<group>"; };
+		3C4B090F1C136FAC0060A16B /* overlay.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = overlay.png; sourceTree = "<group>"; };
+		3C4B09111C1373CB0060A16B /* OverlayView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OverlayView.h; sourceTree = "<group>"; };
+		3C4B09121C1373CB0060A16B /* OverlayView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OverlayView.m; sourceTree = "<group>"; };
+		3C4B09141C137A880060A16B /* MarkerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = MarkerViewController.h; sourceTree = "<group>"; };
+		3C4B09151C137A880060A16B /* MarkerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = MarkerViewController.m; sourceTree = "<group>"; };
+		3C4B09171C137B050060A16B /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3C7E1A491C13578A00F3C9CC /* bluebar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = bluebar.png; sourceTree = "<group>"; };
+		3C7E1A4B1C135DC000F3C9CC /* icon-camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-camera.png"; sourceTree = "<group>"; };
+		3C7E1A4C1C135DC000F3C9CC /* icon-leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-leaderboard.png"; sourceTree = "<group>"; };
+		3C7E1A4D1C135DC000F3C9CC /* icon-settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-settings.png"; sourceTree = "<group>"; };
+		3C7E1A4E1C135DC000F3C9CC /* icon-status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-status.png"; sourceTree = "<group>"; };
+		3C7E1A4F1C135DC000F3C9CC /* icon-sword.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "icon-sword.png"; sourceTree = "<group>"; };
+		3C7E1A551C13613900F3C9CC /* settings.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settings.png; sourceTree = "<group>"; };
+		3C7E1A561C13613900F3C9CC /* settingss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = settingss.png; sourceTree = "<group>"; };
+		3C7E1A571C13613900F3C9CC /* status.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = status.png; sourceTree = "<group>"; };
+		3C7E1A581C13613900F3C9CC /* statuss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = statuss.png; sourceTree = "<group>"; };
+		3C7E1A5D1C13614100F3C9CC /* marker.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = marker.png; sourceTree = "<group>"; };
+		3C7E1A5E1C13614100F3C9CC /* markerss.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = markerss.png; sourceTree = "<group>"; };
+		3C7E1A611C13614600F3C9CC /* leader.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leader.png; sourceTree = "<group>"; };
+		3C7E1A621C13614600F3C9CC /* leaders.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaders.png; sourceTree = "<group>"; };
+		3C7E1A651C13614F00F3C9CC /* camera.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = camera.png; sourceTree = "<group>"; };
+		3C7E1A661C13614F00F3C9CC /* cameras.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cameras.png; sourceTree = "<group>"; };
+		3C7E1A691C13657000F3C9CC /* leaderboard.jpg */ = {isa = PBXFileReference; lastKnownFileType = image.jpeg; path = leaderboard.jpg; sourceTree = "<group>"; };
+		3C7E1A6B1C1365DD00F3C9CC /* trophy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = trophy.png; sourceTree = "<group>"; };
+		3C7E1A6D1C1369B900F3C9CC /* leaderboard.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = leaderboard.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,6 +163,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4B09181C137B050060A16B /* MapKit.framework in Frameworks */,
 				3C4A510D1C12E77600B40516 /* CoreLocation.framework in Frameworks */,
 				3C4A50E71C12867900B40516 /* Crashlytics.framework in Frameworks */,
 				3C4A50E91C12912300B40516 /* FBSDKCoreKit.framework in Frameworks */,
@@ -140,6 +192,7 @@
 		3C4A50A41C12837100B40516 = {
 			isa = PBXGroup;
 			children = (
+				3C4B09171C137B050060A16B /* MapKit.framework */,
 				3C4A50AF1C12837100B40516 /* AED */,
 				3C4A50C91C12837200B40516 /* AEDTests */,
 				3C4A50D41C12837200B40516 /* AEDUITests */,
@@ -168,11 +221,17 @@
 				3C4A51071C12D1AD00B40516 /* ConquerViewController.m */,
 				3C4A51091C12E6CB00B40516 /* FormViewController.h */,
 				3C4A510A1C12E6CB00B40516 /* FormViewController.m */,
+				3C4B090C1C136D980060A16B /* LeaderViewController.h */,
+				3C4B090D1C136D980060A16B /* LeaderViewController.m */,
 				3C4A50B61C12837100B40516 /* LoginViewController.h */,
 				3C4A50B71C12837100B40516 /* LoginViewController.m */,
 				3C4A50F01C12B3B200B40516 /* MainMenuViewController.h */,
 				3C4A50F11C12B3B200B40516 /* MainMenuViewController.m */,
+				3C4B09141C137A880060A16B /* MarkerViewController.h */,
+				3C4B09151C137A880060A16B /* MarkerViewController.m */,
 				3C4A50B91C12837100B40516 /* Main.storyboard */,
+				3C4B09111C1373CB0060A16B /* OverlayView.h */,
+				3C4B09121C1373CB0060A16B /* OverlayView.m */,
 				3C4A50BC1C12837100B40516 /* Assets.xcassets */,
 				3C4A50C11C12837100B40516 /* Info.plist */,
 				3C4A50B01C12837100B40516 /* Supporting Files */,
@@ -183,13 +242,33 @@
 		3C4A50B01C12837100B40516 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				3C4B090F1C136FAC0060A16B /* overlay.png */,
 				3C4A50BE1C12837100B40516 /* LaunchScreen.storyboard */,
+				3C7E1A651C13614F00F3C9CC /* camera.png */,
+				3C7E1A661C13614F00F3C9CC /* cameras.png */,
+				3C7E1A6B1C1365DD00F3C9CC /* trophy.png */,
+				3C7E1A6D1C1369B900F3C9CC /* leaderboard.png */,
+				3C7E1A691C13657000F3C9CC /* leaderboard.jpg */,
+				3C7E1A611C13614600F3C9CC /* leader.png */,
+				3C7E1A621C13614600F3C9CC /* leaders.png */,
+				3C7E1A5D1C13614100F3C9CC /* marker.png */,
+				3C7E1A5E1C13614100F3C9CC /* markerss.png */,
+				3C7E1A551C13613900F3C9CC /* settings.png */,
+				3C7E1A561C13613900F3C9CC /* settingss.png */,
+				3C7E1A571C13613900F3C9CC /* status.png */,
+				3C7E1A581C13613900F3C9CC /* statuss.png */,
+				3C7E1A4B1C135DC000F3C9CC /* icon-camera.png */,
+				3C7E1A4C1C135DC000F3C9CC /* icon-leaderboard.png */,
+				3C7E1A4D1C135DC000F3C9CC /* icon-settings.png */,
+				3C7E1A4E1C135DC000F3C9CC /* icon-status.png */,
+				3C7E1A4F1C135DC000F3C9CC /* icon-sword.png */,
 				3C4A50F91C12C44200B40516 /* greybar.png */,
 				3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */,
 				3C4A511A1C134ABF00B40516 /* PAPcircle.png */,
 				3C4A511B1C134ABF00B40516 /* WPcircle.png */,
 				3C4A510E1C12E84700B40516 /* gps.png */,
 				3C4A50FA1C12C44200B40516 /* PAP.png */,
+				3C7E1A491C13578A00F3C9CC /* bluebar.png */,
 				3C4A51181C13338300B40516 /* login.png */,
 				3C4A51141C132B8200B40516 /* cancel.png */,
 				3C4A51151C132B8200B40516 /* submit.png */,
@@ -334,22 +413,42 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C4A510F1C12E84700B40516 /* gps.png in Resources */,
+				3C7E1A5B1C13613900F3C9CC /* status.png in Resources */,
 				3C4A51011C12C9E600B40516 /* PAPno.png in Resources */,
 				3C4A50C01C12837100B40516 /* LaunchScreen.storyboard in Resources */,
+				3C7E1A4A1C13578A00F3C9CC /* bluebar.png in Resources */,
 				3C4A51171C132B8200B40516 /* submit.png in Resources */,
 				3C4A50BD1C12837100B40516 /* Assets.xcassets in Resources */,
 				3C4A51191C13338300B40516 /* login.png in Resources */,
 				3C4A50F81C12BEB300B40516 /* choose.png in Resources */,
+				3C7E1A511C135DC000F3C9CC /* icon-leaderboard.png in Resources */,
+				3C7E1A641C13614600F3C9CC /* leaders.png in Resources */,
+				3C7E1A631C13614600F3C9CC /* leader.png in Resources */,
+				3C7E1A501C135DC000F3C9CC /* icon-camera.png in Resources */,
+				3C7E1A5F1C13614100F3C9CC /* marker.png in Resources */,
+				3C7E1A6C1C1365DD00F3C9CC /* trophy.png in Resources */,
+				3C7E1A591C13613900F3C9CC /* settings.png in Resources */,
 				3C4A511F1C134C2600B40516 /* gang_wolfik.ttf in Resources */,
+				3C7E1A6E1C1369B900F3C9CC /* leaderboard.png in Resources */,
 				3C4A50FC1C12C44200B40516 /* PAP.png in Resources */,
 				3C4A50BB1C12837100B40516 /* Main.storyboard in Resources */,
+				3C7E1A671C13614F00F3C9CC /* camera.png in Resources */,
+				3C4B09101C136FAC0060A16B /* overlay.png in Resources */,
+				3C7E1A5C1C13613900F3C9CC /* statuss.png in Resources */,
 				3C4A51111C12EF9200B40516 /* Geylang, SG.gpx in Resources */,
 				3C4A511C1C134AC000B40516 /* PAPcircle.png in Resources */,
+				3C7E1A681C13614F00F3C9CC /* cameras.png in Resources */,
+				3C7E1A6A1C13657000F3C9CC /* leaderboard.jpg in Resources */,
+				3C7E1A521C135DC000F3C9CC /* icon-settings.png in Resources */,
 				3C4A51021C12C9E600B40516 /* WPno.png in Resources */,
+				3C7E1A5A1C13613900F3C9CC /* settingss.png in Resources */,
 				3C4A511D1C134AC000B40516 /* WPcircle.png in Resources */,
+				3C7E1A601C13614100F3C9CC /* markerss.png in Resources */,
 				3C4A51161C132B8200B40516 /* cancel.png in Resources */,
 				3C4A50EF1C12B2CF00B40516 /* GuestLogin.png in Resources */,
+				3C7E1A531C135DC000F3C9CC /* icon-status.png in Resources */,
 				3C4A50FB1C12C44200B40516 /* greybar.png in Resources */,
+				3C7E1A541C135DC000F3C9CC /* icon-sword.png in Resources */,
 				3C4A50ED1C12B07D00B40516 /* FacebookLogin.png in Resources */,
 				3C4A50FE1C12C78E00B40516 /* WP.png in Resources */,
 			);
@@ -392,12 +491,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4B09161C137A880060A16B /* MarkerViewController.m in Sources */,
 				3C4A51081C12D1AD00B40516 /* ConquerViewController.m in Sources */,
 				3C4A50F21C12B3B200B40516 /* MainMenuViewController.m in Sources */,
 				3C4A51051C12CF0000B40516 /* ChooseSideViewController.m in Sources */,
 				3C4A50B81C12837100B40516 /* LoginViewController.m in Sources */,
 				3C4A510B1C12E6CB00B40516 /* FormViewController.m in Sources */,
+				3C4B090E1C136D980060A16B /* LeaderViewController.m in Sources */,
 				3C4A50B51C12837100B40516 /* AppDelegate.m in Sources */,
+				3C4B09131C1373CB0060A16B /* OverlayView.m in Sources */,
 				3C4A50B21C12837100B40516 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -638,6 +740,7 @@
 				3C4A50DC1C12837200B40516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C4A50DD1C12837200B40516 /* Build configuration list for PBXNativeTarget "AEDTests" */ = {
 			isa = XCConfigurationList;
@@ -646,6 +749,7 @@
 				3C4A50DF1C12837200B40516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		3C4A50E01C12837200B40516 /* Build configuration list for PBXNativeTarget "AEDUITests" */ = {
 			isa = XCConfigurationList;
@@ -654,6 +758,7 @@
 				3C4A50E21C12837200B40516 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};

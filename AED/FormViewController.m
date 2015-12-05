@@ -55,7 +55,7 @@
 }
 
 - (void) setImage: (UIImage *)image {
-    self.image.image = image;
+    self.imageView.image = image;
 }
 
 - (IBAction)getGPS:(id)sender {

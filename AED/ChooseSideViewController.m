@@ -17,21 +17,47 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(choosePOP)];
+    [self.POPView addGestureRecognizer:tap];
+    UITapGestureRecognizer *tap2 = [[UITapGestureRecognizer alloc]
+                                   initWithTarget:self
+                                   action:@selector(chooseWOP)];
+    [self.WOPview addGestureRecognizer:tap2];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)choosePOP {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Pledge allegiance to POP?"
+                                                                             message:@"This decision cannot be changed."
+                                                                      preferredStyle:UIAlertControllerStyleAlert];
+    UIAlertAction *confirm = [UIAlertAction actionWithTitle:@"With my life" style:UIAlertActionStyleDefault handler:^(UIAlertAction *action) {
+        [self showMainMenu];
+    }];
+    UIAlertAction *never = [UIAlertAction actionWithTitle:@"Never" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+    }];
+    [alertController addAction:confirm];
+    [alertController addAction:never];
+    [self presentViewController:alertController animated:YES completion:nil];
 }
 
-/*
-#pragma mark - Navigation
+- (void)chooseWOP {
+    UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Pledge allegiance to WOP?"
+                                                                             message:@"This decision cannot be changed."
+                                                                      preferredStyle:
+                                          UIAlertControllerStyleAlert];
+    UIAlertAction *never = [UIAlertAction actionWithTitle:@"Never" style:UIAlertActionStyleDestructive handler:^(UIAlertAction *action) {
+    }];
+    [alertController addAction:never];
+    [self presentViewController:alertController animated:YES completion:nil];
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
 }
-*/
+
+- (void) showMainMenu {
+    NSString * storyboardName = @"Main";
+    UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+    UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"MainMenu"];
+    [self presentViewController:vc animated:YES completion:nil];
+}
 
 @end

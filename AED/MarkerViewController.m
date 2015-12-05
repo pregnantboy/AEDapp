@@ -1,28 +1,44 @@
 //
-//  MainMenuViewController.m
+//  MarkerViewController.m
 //  AED
 //
-//  Created by Ian Chen on 5/12/15.
+//  Created by Ian Chen on 6/12/15.
 //  Copyright © 2015 Ian Chen. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "MarkerViewController.h"
 
-@interface MainMenuViewController ()
+@interface MarkerViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation MarkerViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
-    [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://192.168.1.101:9080/"]]];
+    self.mapView.delegate = self;
+    self.locationManager = [[CLLocationManager alloc] init];
+    self.locationManager.delegate = self;
+    [self.locationManager requestAlwaysAuthorization];
+
+    [self.locationManager startUpdatingLocation];
+    
+    self.mapView.showsUserLocation = YES;
+    [self.mapView setMapType:MKMapTypeStandard];
+    [self.mapView setZoomEnabled:YES];
+    [self.mapView setScrollEnabled:YES];
 }
 
-- (void)didReceiveMemoryWarning {
-    [super didReceiveMemoryWarning];
-    // Dispose of any resources that can be recreated.
+- (void)viewDidAppear:(BOOL)animated {
+    self.locationManager.distanceFilter = kCLDistanceFilterNone;
+    self.locationManager.desiredAccuracy = kCLLocationAccuracyBest;
+    [self.locationManager startUpdatingLocation];
+}
+
+- (void)mapView:(MKMapView *)mapView didUpdateUserLocation:(MKUserLocation *)userLocation
+{
+    MKCoordinateRegion region = MKCoordinateRegionMakeWithDistance(userLocation.coordinate, 800, 800);
+    [self.mapView setRegion:[self.mapView regionThatFits:region] animated:YES];
 }
 - (IBAction)logoutButton:(id)sender {
     UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"Logout?"
@@ -44,15 +60,5 @@
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"loginpage"];
     [self presentViewController:vc animated:YES completion:nil];
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

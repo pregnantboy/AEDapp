@@ -1,23 +1,22 @@
 //
-//  MainMenuViewController.m
+//  LeaderViewController.m
 //  AED
 //
-//  Created by Ian Chen on 5/12/15.
+//  Created by Ian Chen on 6/12/15.
 //  Copyright © 2015 Ian Chen. All rights reserved.
 //
 
-#import "MainMenuViewController.h"
+#import "LeaderViewController.h"
 
-@interface MainMenuViewController ()
+@interface LeaderViewController ()
 
 @end
 
-@implementation MainMenuViewController
+@implementation LeaderViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    [self.webView loadRequest:[[NSURLRequest alloc] initWithURL:[[NSURL alloc] initWithString:@"http://192.168.1.101:9080/"]]];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -44,7 +43,6 @@
     UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"loginpage"];
     [self presentViewController:vc animated:YES completion:nil];
 }
-
 /*
 #pragma mark - Navigation
 

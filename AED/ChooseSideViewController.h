@@ -9,5 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface ChooseSideViewController : UIViewController
+@property (weak, nonatomic) IBOutlet UIView *POPView;
+@property (weak, nonatomic) IBOutlet UIView *WOPview;
 
 @end

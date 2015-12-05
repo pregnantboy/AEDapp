@@ -7,21 +7,35 @@
 //
 
 #import "ConquerViewController.h"
-
-
+#import "OverlayView.h"
+#include "FormViewController.h"
 @interface ConquerViewController ()
 
 @end
 
 @implementation ConquerViewController
 
-
+BOOL cancelled;
+BOOL selected;
+UIImage * passimage;
 - (void)viewDidLoad {
     [super viewDidLoad];
-  
+    cancelled = NO;
+    selected = NO;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    if (selected) {
+        NSString * storyboardName = @"Main";
+        UIStoryboard *storyboard = [UIStoryboard storyboardWithName:storyboardName bundle: nil];
+        UIViewController * vc = [storyboard instantiateViewControllerWithIdentifier:@"form"];
+        [self presentViewController:vc animated:YES completion:^{
+            [(FormViewController *)vc setImage:passimage];
+        }];
+
+    } else if (cancelled) {
+        [self showMainMenu];
+    }
     if (![UIImagePickerController isSourceTypeAvailable:UIImagePickerControllerSourceTypeCamera]) {
         
         UIAlertController *alertController = [UIAlertController alertControllerWithTitle:@"No camera!"
@@ -50,11 +64,11 @@
   
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
     // creating overlayView
-    UIView* overlayView = [[UIView alloc] initWithFrame:picker.view.frame];
+    OverlayView* overlayView = [[OverlayView alloc] initWithFrame:picker.view.frame];
     // letting png transparency be
     overlayView.backgroundColor = [UIColor clearColor];
-    UIImageView *overImg = [[UIImageView alloc] initWithFrame: CGRectMake(200, 100, 300, 400)];
-    [overImg setImage:[UIImage imageNamed:@"PAP.png"]];
+    UIImageView *overImg = [[UIImageView alloc] initWithFrame: CGRectMake(250, 200, 300, 400)];
+    [overImg setImage:[UIImage imageNamed:@"overlay.png"]];
     [overlayView addSubview:overImg];
     
     [overlayView.layer setOpaque:NO];
@@ -66,17 +80,18 @@
 }
 
 - (void)imagePickerControllerDidCancel:(UIImagePickerController *)picker {
-    
-    [self showMainMenu];
-    
+    cancelled = YES;
+    [self dismissViewControllerAnimated:NO completion:nil];
 }
 - (void)imagePickerController:(UIImagePickerController *)picker didFinishPickingMediaWithInfo:(NSDictionary *)info {
     
     UIImage *chosenImage = info[UIImagePickerControllerEditedImage];
     self.imageView.image = chosenImage;
-    
-    [picker dismissViewControllerAnimated:YES completion:NULL];
-    
+    passimage = chosenImage;
+    selected = YES;
+    [self dismissViewControllerAnimated:NO completion:nil];
+
 }
+
 
 @end

@@ -13,7 +13,7 @@
 @property (strong, nonatomic) CLLocationManager *locationManager;
 @property (weak, nonatomic) IBOutlet UITextField *lat;
 @property (weak, nonatomic) IBOutlet UITextField *lon;
-@property (weak, nonatomic) IBOutlet UIImageView *image;
+@property (weak, nonatomic) IBOutlet UIImageView *imageView;
 @property (weak, nonatomic) IBOutlet UIScrollView *scrollView;
 @property (weak, nonatomic) IBOutlet UITextView *textView;
 @property (weak, nonatomic) IBOutlet UISwitch *placed;
@@ -21,5 +21,5 @@
 @property (weak, nonatomic) IBOutlet UISwitch *ready;
 @property (weak, nonatomic) IBOutlet UITextField *floor;
 
-
+- (void) setImage: (UIImage *)image;
 @end
