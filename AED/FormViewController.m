@@ -26,6 +26,22 @@
                                    initWithTarget:self
                                    action:@selector(dismissKeyboard)];
     [self.scrollView addGestureRecognizer:tap];
+    UIView *paddingView = [[UIView alloc] initWithFrame:CGRectMake(0, 0, 5, 10)];
+    self.textView.layer.borderWidth = 1.0f;
+    self.textView.layer.borderColor = [[UIColor blackColor] CGColor];
+    
+    self.lat.borderStyle = UITextBorderStyleRoundedRect;
+    self.lat.layer.borderWidth = 1.0f;
+    self.lat.layer.cornerRadius = 8.0f;
+    self.lat.leftView = paddingView;
+    self.lon.borderStyle = UITextBorderStyleRoundedRect;
+    self.lon.layer.borderWidth = 1.0f;
+    self.lon.layer.cornerRadius = 8.0f;
+    self.lon.leftView = paddingView;
+    self.floor.borderStyle = UITextBorderStyleRoundedRect;
+    self.floor.layer.borderWidth = 1.0f;
+    self.floor.layer.cornerRadius = 8.0f;
+    self.floor.leftView = paddingView;
 }
 
 - (void)dismissKeyboard {
@@ -34,19 +50,17 @@
 
 
 - (void)locationManager:(CLLocationManager *)manager didUpdateLocations:(NSArray *)locations {
-    CLLocation* loc = [locations lastObject]; // locations is guaranteed to have at least one object
-    float latitude = loc.coordinate.latitude;
-    float longitude = loc.coordinate.longitude;
-    NSLog(@"%.8f",latitude);
-    NSLog(@"%.8f",longitude);
     self.lat.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.latitude];
     self.lon.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.longitude];
 }
 
+- (void) setImage: (UIImage *)image {
+    self.image.image = image;
+}
 
 - (IBAction)getGPS:(id)sender {
-    self.lat.text = [NSString stringWithFormat:@"%.8f",self.locationManager.location.coordinate.latitude];
-    self.lon.text = [NSString stringWithFormat:@"%.8f",self.locationManager.location.coordinate.longitude];
+    self.lat.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.latitude];
+    self.lon.text = [NSString stringWithFormat:@"%f",self.locationManager.location.coordinate.longitude];
 }
 
 

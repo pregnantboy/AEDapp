@@ -34,6 +34,12 @@
 		3C4A510D1C12E77600B40516 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4A510C1C12E77600B40516 /* CoreLocation.framework */; };
 		3C4A510F1C12E84700B40516 /* gps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A510E1C12E84700B40516 /* gps.png */; };
 		3C4A51111C12EF9200B40516 /* Geylang, SG.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */; };
+		3C4A51161C132B8200B40516 /* cancel.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51141C132B8200B40516 /* cancel.png */; };
+		3C4A51171C132B8200B40516 /* submit.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51151C132B8200B40516 /* submit.png */; };
+		3C4A51191C13338300B40516 /* login.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51181C13338300B40516 /* login.png */; };
+		3C4A511C1C134AC000B40516 /* PAPcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511A1C134ABF00B40516 /* PAPcircle.png */; };
+		3C4A511D1C134AC000B40516 /* WPcircle.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511B1C134ABF00B40516 /* WPcircle.png */; };
+		3C4A511F1C134C2600B40516 /* gang_wolfik.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A511E1C134BE600B40516 /* gang_wolfik.ttf */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -93,6 +99,12 @@
 		3C4A510C1C12E77600B40516 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
 		3C4A510E1C12E84700B40516 /* gps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gps.png; sourceTree = "<group>"; };
 		3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Geylang, SG.gpx"; path = "../Geylang, SG.gpx"; sourceTree = "<group>"; };
+		3C4A51141C132B8200B40516 /* cancel.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = cancel.png; sourceTree = "<group>"; };
+		3C4A51151C132B8200B40516 /* submit.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = submit.png; sourceTree = "<group>"; };
+		3C4A51181C13338300B40516 /* login.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = login.png; sourceTree = "<group>"; };
+		3C4A511A1C134ABF00B40516 /* PAPcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = PAPcircle.png; sourceTree = "<group>"; };
+		3C4A511B1C134ABF00B40516 /* WPcircle.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = WPcircle.png; sourceTree = "<group>"; };
+		3C4A511E1C134BE600B40516 /* gang_wolfik.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = gang_wolfik.ttf; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -174,9 +186,15 @@
 				3C4A50BE1C12837100B40516 /* LaunchScreen.storyboard */,
 				3C4A50F91C12C44200B40516 /* greybar.png */,
 				3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */,
+				3C4A511A1C134ABF00B40516 /* PAPcircle.png */,
+				3C4A511B1C134ABF00B40516 /* WPcircle.png */,
 				3C4A510E1C12E84700B40516 /* gps.png */,
 				3C4A50FA1C12C44200B40516 /* PAP.png */,
+				3C4A51181C13338300B40516 /* login.png */,
+				3C4A51141C132B8200B40516 /* cancel.png */,
+				3C4A51151C132B8200B40516 /* submit.png */,
 				3C4A50FD1C12C78E00B40516 /* WP.png */,
+				3C4A511E1C134BE600B40516 /* gang_wolfik.ttf */,
 				3C4A50FF1C12C9E600B40516 /* PAPno.png */,
 				3C4A51001C12C9E600B40516 /* WPno.png */,
 				3C4A50F71C12BEB300B40516 /* choose.png */,
@@ -318,12 +336,18 @@
 				3C4A510F1C12E84700B40516 /* gps.png in Resources */,
 				3C4A51011C12C9E600B40516 /* PAPno.png in Resources */,
 				3C4A50C01C12837100B40516 /* LaunchScreen.storyboard in Resources */,
+				3C4A51171C132B8200B40516 /* submit.png in Resources */,
 				3C4A50BD1C12837100B40516 /* Assets.xcassets in Resources */,
+				3C4A51191C13338300B40516 /* login.png in Resources */,
 				3C4A50F81C12BEB300B40516 /* choose.png in Resources */,
+				3C4A511F1C134C2600B40516 /* gang_wolfik.ttf in Resources */,
 				3C4A50FC1C12C44200B40516 /* PAP.png in Resources */,
 				3C4A50BB1C12837100B40516 /* Main.storyboard in Resources */,
 				3C4A51111C12EF9200B40516 /* Geylang, SG.gpx in Resources */,
+				3C4A511C1C134AC000B40516 /* PAPcircle.png in Resources */,
 				3C4A51021C12C9E600B40516 /* WPno.png in Resources */,
+				3C4A511D1C134AC000B40516 /* WPcircle.png in Resources */,
+				3C4A51161C132B8200B40516 /* cancel.png in Resources */,
 				3C4A50EF1C12B2CF00B40516 /* GuestLogin.png in Resources */,
 				3C4A50FB1C12C44200B40516 /* greybar.png in Resources */,
 				3C4A50ED1C12B07D00B40516 /* FacebookLogin.png in Resources */,
