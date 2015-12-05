@@ -30,6 +30,10 @@
 		3C4A51021C12C9E600B40516 /* WPno.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51001C12C9E600B40516 /* WPno.png */; };
 		3C4A51051C12CF0000B40516 /* ChooseSideViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A51041C12CF0000B40516 /* ChooseSideViewController.m */; };
 		3C4A51081C12D1AD00B40516 /* ConquerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A51071C12D1AD00B40516 /* ConquerViewController.m */; };
+		3C4A510B1C12E6CB00B40516 /* FormViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3C4A510A1C12E6CB00B40516 /* FormViewController.m */; };
+		3C4A510D1C12E77600B40516 /* CoreLocation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3C4A510C1C12E77600B40516 /* CoreLocation.framework */; };
+		3C4A510F1C12E84700B40516 /* gps.png in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A510E1C12E84700B40516 /* gps.png */; };
+		3C4A51111C12EF9200B40516 /* Geylang, SG.gpx in Resources */ = {isa = PBXBuildFile; fileRef = 3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -84,6 +88,11 @@
 		3C4A51041C12CF0000B40516 /* ChooseSideViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ChooseSideViewController.m; sourceTree = "<group>"; };
 		3C4A51061C12D1AD00B40516 /* ConquerViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ConquerViewController.h; sourceTree = "<group>"; };
 		3C4A51071C12D1AD00B40516 /* ConquerViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ConquerViewController.m; sourceTree = "<group>"; };
+		3C4A51091C12E6CB00B40516 /* FormViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FormViewController.h; sourceTree = "<group>"; };
+		3C4A510A1C12E6CB00B40516 /* FormViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = FormViewController.m; sourceTree = "<group>"; };
+		3C4A510C1C12E77600B40516 /* CoreLocation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreLocation.framework; path = System/Library/Frameworks/CoreLocation.framework; sourceTree = SDKROOT; };
+		3C4A510E1C12E84700B40516 /* gps.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = gps.png; sourceTree = "<group>"; };
+		3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.xml; name = "Geylang, SG.gpx"; path = "../Geylang, SG.gpx"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +100,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4A510D1C12E77600B40516 /* CoreLocation.framework in Frameworks */,
 				3C4A50E71C12867900B40516 /* Crashlytics.framework in Frameworks */,
 				3C4A50E91C12912300B40516 /* FBSDKCoreKit.framework in Frameworks */,
 				3C4A50EB1C12925F00B40516 /* FBSDKLoginKit.framework in Frameworks */,
@@ -144,6 +154,8 @@
 				3C4A51041C12CF0000B40516 /* ChooseSideViewController.m */,
 				3C4A51061C12D1AD00B40516 /* ConquerViewController.h */,
 				3C4A51071C12D1AD00B40516 /* ConquerViewController.m */,
+				3C4A51091C12E6CB00B40516 /* FormViewController.h */,
+				3C4A510A1C12E6CB00B40516 /* FormViewController.m */,
 				3C4A50B61C12837100B40516 /* LoginViewController.h */,
 				3C4A50B71C12837100B40516 /* LoginViewController.m */,
 				3C4A50F01C12B3B200B40516 /* MainMenuViewController.h */,
@@ -161,6 +173,8 @@
 			children = (
 				3C4A50BE1C12837100B40516 /* LaunchScreen.storyboard */,
 				3C4A50F91C12C44200B40516 /* greybar.png */,
+				3C4A51101C12EF9200B40516 /* Geylang, SG.gpx */,
+				3C4A510E1C12E84700B40516 /* gps.png */,
 				3C4A50FA1C12C44200B40516 /* PAP.png */,
 				3C4A50FD1C12C78E00B40516 /* WP.png */,
 				3C4A50FF1C12C9E600B40516 /* PAPno.png */,
@@ -168,6 +182,7 @@
 				3C4A50F71C12BEB300B40516 /* choose.png */,
 				3C4A50EC1C12B07D00B40516 /* FacebookLogin.png */,
 				3C4A50EE1C12B2CF00B40516 /* GuestLogin.png */,
+				3C4A510C1C12E77600B40516 /* CoreLocation.framework */,
 				3C4A50EA1C12925F00B40516 /* FBSDKLoginKit.framework */,
 				3C4A50E81C12912300B40516 /* FBSDKCoreKit.framework */,
 				3C4A50E41C12867900B40516 /* Fabric.framework */,
@@ -300,12 +315,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C4A510F1C12E84700B40516 /* gps.png in Resources */,
 				3C4A51011C12C9E600B40516 /* PAPno.png in Resources */,
 				3C4A50C01C12837100B40516 /* LaunchScreen.storyboard in Resources */,
 				3C4A50BD1C12837100B40516 /* Assets.xcassets in Resources */,
 				3C4A50F81C12BEB300B40516 /* choose.png in Resources */,
 				3C4A50FC1C12C44200B40516 /* PAP.png in Resources */,
 				3C4A50BB1C12837100B40516 /* Main.storyboard in Resources */,
+				3C4A51111C12EF9200B40516 /* Geylang, SG.gpx in Resources */,
 				3C4A51021C12C9E600B40516 /* WPno.png in Resources */,
 				3C4A50EF1C12B2CF00B40516 /* GuestLogin.png in Resources */,
 				3C4A50FB1C12C44200B40516 /* greybar.png in Resources */,
@@ -355,6 +372,7 @@
 				3C4A50F21C12B3B200B40516 /* MainMenuViewController.m in Sources */,
 				3C4A51051C12CF0000B40516 /* ChooseSideViewController.m in Sources */,
 				3C4A50B81C12837100B40516 /* LoginViewController.m in Sources */,
+				3C4A510B1C12E6CB00B40516 /* FormViewController.m in Sources */,
 				3C4A50B51C12837100B40516 /* AppDelegate.m in Sources */,
 				3C4A50B21C12837100B40516 /* main.m in Sources */,
 			);

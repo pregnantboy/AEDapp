@@ -47,7 +47,20 @@
     UIImagePickerController *picker = [[UIImagePickerController alloc] init];
     picker.delegate = self;
     picker.allowsEditing = YES;
+  
     picker.sourceType = UIImagePickerControllerSourceTypeCamera;
+    // creating overlayView
+    UIView* overlayView = [[UIView alloc] initWithFrame:picker.view.frame];
+    // letting png transparency be
+    overlayView.backgroundColor = [UIColor clearColor];
+    UIImageView *overImg = [[UIImageView alloc] initWithFrame: CGRectMake(200, 100, 300, 400)];
+    [overImg setImage:[UIImage imageNamed:@"PAP.png"]];
+    [overlayView addSubview:overImg];
+    
+    [overlayView.layer setOpaque:NO];
+    overlayView.opaque = NO;
+    
+    picker.cameraOverlayView = overlayView;
     
     [self presentViewController:picker animated:YES completion:NULL];
 }
